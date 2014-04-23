@@ -1,0 +1,16 @@
+name: ubuntu14.04
+version: 1.0
+description: Ubuntu 12.04 upgraded to 14.04
+type: main
+platform: ubuntu@12.04
+keywords:
+  - ubuntu
+  - 14.04
+  - trusty
+script: |
+  sudo apt-get update
+  sudo apt-get install -y update-manager-core
+  sudo do-release-upgrade -f DistUpgradeViewNonInteractive -m server -d
+  sudo apt-get install -y aptitude
+  sudo aptitude update
+  sudo aptitude safe-upgrade
