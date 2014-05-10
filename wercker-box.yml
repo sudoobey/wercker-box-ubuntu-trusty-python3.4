@@ -17,3 +17,4 @@ script: |
   sudo aptitude update
   sudo aptitude safe-upgrade
   sudo aptitude install python3 python3-setuptools
+  sudo easy_install3 pip virtualenv
