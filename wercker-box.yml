@@ -1,12 +1,14 @@
 name: ubuntu14.04
 version: 1.0.0
-description: Ubuntu 12.04 upgraded to 14.04
+description: Ubuntu 12.04 upgraded to 14.04 and python3.4 installed
 type: main
 platform: ubuntu@12.04
 keywords:
   - ubuntu
   - 14.04
   - trusty
+  - python
+  - python3.4
 script: |
   sudo apt-get update
   sudo apt-get install -y update-manager-core
@@ -14,3 +16,4 @@ script: |
   sudo apt-get install -y aptitude
   sudo aptitude update
   sudo aptitude safe-upgrade
+  sudo aptitude install python3 python3-setuptools
