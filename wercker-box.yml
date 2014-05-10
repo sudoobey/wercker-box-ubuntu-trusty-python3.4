@@ -1,4 +1,4 @@
-name: ubuntu14.04
+name: ubuntu-trusty-python3.4
 version: 1.0.0
 description: Ubuntu 12.04 upgraded to 14.04 and python3.4 installed
 type: main
